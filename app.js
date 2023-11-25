@@ -26,7 +26,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://localhost:27017/userDB");
+mongoose.connect("mongodb+srv://gayashvihangana:Default_1234@cluster0.etpak2p.mongodb.net/userDB");
 
 const userSchema = new mongoose.Schema ({
     email: String,
@@ -167,6 +167,11 @@ app.post("/submit", function (req, res) {
     });
 });
 
-app.listen(3000, function () {
-    console.log("Server has started on port 3000 successfully!");
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+
+app.listen(port, function() {
+  console.log("Server has started successfully");
 });
