@@ -67,7 +67,8 @@ passport.use(
     {
       clientID: process.env.clientID,
       clientSecret: process.env.clientSECRET,
-      callbackURL: "http://localhost:3000/auth/google/secrets",
+      callbackURL:
+        "https://secrets-by-gayash-vihangana.onrender.com/auth/google/secrets",
     },
     function (accessToken, refreshToken, profile, cb) {
       console.log(profile);
