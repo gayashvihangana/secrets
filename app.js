@@ -68,9 +68,8 @@ passport.use(
       // clientID: process.env.clientID,
       // clientSecret: process.env.clientSECRET,
       clientID:
-        759362699613 -
-        unm4sk1iap164uf20p7nukrif1mbgtk5.apps.googleusercontent.com,
-      clientSECRET: GOCSPX - KZgrZ9iPt3gs2XEHjk87W4M5N - cV,
+        "759362699613-unm4sk1iap164uf20p7nukrif1mbgtk5.apps.googleusercontent.com",
+      clientSECRET: "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",
       callbackURL:
         "https://secrets-by-gayash-vihangana.onrender.com/auth/google/secrets",
     },
